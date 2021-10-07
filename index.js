@@ -132,7 +132,7 @@ app.get('/users', async function (req, res) {
     }
 })
 
-app.delete("users/:id", async (req, res) => {
+app.delete("/users/:id", async (req, res) => {
     console.log(req.params)
     const { id } = req.params
     const client = await createconnection();
@@ -141,7 +141,7 @@ app.delete("users/:id", async (req, res) => {
     res.send(user)
 })
 
-app.patch("users/:id", async (req, res) => {
+app.patch("/users/:id", async (req, res) => {
     console.log(req.params)
     const { id } = req.params
     const client = await createconnection()
